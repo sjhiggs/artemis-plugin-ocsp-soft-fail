@@ -6,6 +6,8 @@ Configures the broker to SOFT_FAIL when OCSP is not available during client cert
 
 Must set `ocsp.enable=true` in jvm's `conf/security/java.security`.
 
+Broker must be configured for mutual authentication, similar to this [example](https://github.com/apache/activemq-artemis-examples/blob/main/examples/features/standard/ssl-enabled-dual-authentication/src/main/resources/activemq/server0/bootstrap.xml)
+
 # Installation
 
 The plugin must be compiled
